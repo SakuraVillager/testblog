@@ -5,7 +5,7 @@ description: ''
 image: ''
 tags: ["博客", "Fuwari", "教程"]
 category: 'Fuwari'
-draft: ture 
+draft: true 
 lang: ''
 ---
 
