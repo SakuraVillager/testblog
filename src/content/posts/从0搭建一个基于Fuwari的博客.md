@@ -48,6 +48,9 @@ npm install -g pnpm
 pnpm -v
 ```
 如果显示版本号，则表示安装成功。
+> [!tip]
+ 如果无法显示版本号，尝试执行`npm pnpm -v`
+
 ## 创建GitHub账户
 访问[Github](https://github.com/)并创建账号。
 > [!tip]
