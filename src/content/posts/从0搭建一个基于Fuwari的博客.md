@@ -6,7 +6,7 @@ tags:
   - 博客
   - Fuwari
   - 教程
-category: test
+category: Fuwari
 draft: false
 lang: zh
 ---
