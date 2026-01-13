@@ -166,7 +166,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 # 在线部署你的博客(托管+绑定域名)
 ## 使用Pages服务托管你的博客
 > [!TIP]
->虽然你的博客已经被提交到GitHub上了，但还是没有实现在线呈现。你固然可以租一个服务器来部署你的博客，但我认为大多数人肯定是希望白嫖的。由于阿里云国内刚开通边缘安全加速服务(ESA)，想拿来体验一下，于是本篇文章使用`EdgeOne`作为演示。你当然可以部署到其他Pages服务托管平台，例如`Cloudflare Pages`等，也可以直接部署到`Vercel`等平台。
+> 虽然你的博客已经被提交到GitHub上了，但还是没有实现在线呈现。你固然可以租一个服务器来部署你的博客，但我认为大多数人肯定是希望白嫖的。由于阿里云国内刚开通边缘安全加速服务(ESA)，想拿来体验一下，于是本篇文章使用`EdgeOne`作为演示。你当然可以部署到其他Pages服务托管平台，例如`Cloudflare Pages`等，也可以直接部署到`Vercel`等平台。
 
 进入[EdgeOne控制台](https://console.cloud.tencent.com/edgeone)，点击`创建项目`-`通过导入Git仓库创建`，选择你的仓库。
 ![](./assets/从0搭建一个基于Fuwari的博客/file-20260113132011778.png)
