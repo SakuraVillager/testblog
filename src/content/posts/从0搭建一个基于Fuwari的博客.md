@@ -16,7 +16,7 @@ lang: zh
 ::github{repo="saicaca/fuwari"}
 
 # 前置条件
-> [!tip]
+> [!TIP]
 >如果你已经完成一下环境的部署，那么可以跳过这一部分。
 >1. 安装 Git
 >2. 安装 Node.js 且 Node.js >= 20
@@ -48,12 +48,12 @@ npm install -g pnpm
 pnpm -v
 ```
 如果显示版本号，则表示安装成功。
-> [!tip]
- 如果无法显示版本号，尝试执行`npm pnpm -v`
+> [!TIP]
+> 如果无法显示版本号，尝试检查npm的环境变量配置
 
 ## 创建GitHub账户
 访问[Github](https://github.com/)并创建账号。
-> [!tip]
+> [!TIP]
 >这边使用的是GitHub作为演示，但你还可以通过其他git仓库储存你的博客文件，例如gitee、gitlab等。
 # 本地启动项目
 ## 克隆 Fuwari 到本地
@@ -69,10 +69,10 @@ git clone https://github.com/saicaca/fuwari.git
 cd fuwari
 pnpm install
 ```
-> [!tip]
+> [!TIP]
 >如果安装过程中遇到`warn`，可能只是版本兼容性等问题，对我们的博客几乎没有影响，可以忽略不记。只要没有看到`error`就说明你已经成功的安装依赖了。
 ## 本地运行 Fuwari 
-> [!tip]
+> [!TIP]
 >这个功能一般用于撰写完文章后的预览和检查，并非实际部署。
 
 在根目录下的命令行中运行以下代码：
@@ -90,15 +90,15 @@ pnpm dev
 如果你看到如图所示的默认首页，那么恭喜你本地部署部分就完成了。
 # 撰写博客文章
 
-> [!tip]
+> [!TIP]
 >这里先介绍一下官方给出的写作方法。本文在后文使用`VSCode`和`Obsidian`进行写作演示，你也可以用其他markdown编辑器来编写文章。例如typora等。
 
 在根目录下打开命令行，执行：
 ```bash
 pnpm new-post <filename>
 ```
-> [!note]
->此处需要把`<filename>`替换为你的文章标题。
+> [!NOTE]
+> 此处需要把`<filename>`替换为你的文章标题。
 
 这行代码的作用就是在`src/content/posts/`目录中新建一个`<filename>.md`文件，文件中自动包含了以下属性：
 ```markdown
@@ -127,10 +127,10 @@ language: zh
 | language    | 文章语言（可空）                                 |
 
 随后你就可以打开这个`markdown`文件愉快的编写博客文章了。
-> [!warning]
+> [!WARNING]
 >你编写的文章开头一定包含这些属性，否则会导致博客预览或构建时失败并报错！
 # 提交到Git并推送
-> [!tip]
+> [!TIP]
 >这里先介绍一下普通上传git的方法。本文将在后文使用`GitHub`作为仓库，展示使用`VSCode`和`Obsidian`进行0代码上传git。你也可以用其他git仓库，如`gitee`、`GitLab`等平台来托管你的博客代码。
 
 ## 提交到git
@@ -145,7 +145,7 @@ git init
 git add .
 git commit -m "初始化"
 ```
-> [!tip] 对没用过git的人解释一下提交
+> [!TIP] 对没用过git的人解释一下提交
 >当点击提交按钮时，这个模板就会被保存到本地git中，类似于存档。当你后续的编辑除了问题，比如不小心把文件全删了，就可以通过这个存档回到你最后提交的状态状态。
 ## 推送到在线代码托管平台
 为了推送到GitHub上，你首先需要在GitHub上新建一个仓库，用于储存你的博客。在GitHub任意界面点击`+`-`New repository`。按提示配置，私有或公开都可以。懒的话就起个名，其他保持默认直接创建即可。
@@ -167,7 +167,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 4. 推送，使用`git push -u origin main`
 # 在线部署你的博客(托管+绑定域名)
 ## 使用Pages服务托管你的博客
-> [!tip]
+> [!TIP]
 >虽然你的博客已经被提交到GitHub上了，但还是没有实现在线呈现。你固然可以租一个服务器来部署你的博客，但我认为大多数人肯定是希望白嫖的。由于阿里云国内刚开通边缘安全加速服务(ESA)，想拿来体验一下，于是本篇文章使用`EdgeOne`作为演示。你当然可以部署到其他Pages服务托管平台，例如`Cloudflare Pages`等，也可以直接部署到`Vercel`等平台。
 
 进入[EdgeOne控制台](https://console.cloud.tencent.com/edgeone)，点击`创建项目`-`通过导入Git仓库创建`，选择你的仓库。
@@ -192,7 +192,7 @@ Deployment completed
 点击`预览`-`你的网址`，你就可以在线访问你的博客了。
 ![](./assets/从0搭建一个基于Fuwari的博客/file-20260113133110319.png)
 ## 绑定域名
-> [!tip]
+> [!TIP]
 >前提条件：确保已准备好一个域名。
 
 点击侧边栏的`域名管理`-`添加自定义域名`。
